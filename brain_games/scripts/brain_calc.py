@@ -1,28 +1,13 @@
-import prompt
-import random
-from brain_games.cli import welcome_user
+#!/usr/bin/env python3
+from brain_games.engine import run_game
+from brain_games.games.calc_game import calc_game
+
+
+QUESTION = 'What is the result of the expression?'
 
 
 def main():
-    name = welcome_user()
-    print('What is the result of the expression?')
-    count = 0
-    while count < 3:
-        random_int_1 = random.randint(1, 10)
-        random_int_2 = random.randint(1, 10)
-        action = random.choice(['*', '+', '-'])
-        operation = ' '.join((str(random_int_1), action, str(random_int_2)))
-        result = int(eval(operation))
-        print(f'Question: {operation}')
-        answer = prompt.integer('Your answer: ')
-        if answer == result:
-            print('Correct!')
-            count += 1
-        else:
-            print(f"'{answer}' is wrong answer ;(."
-                  + f" Correct answer was '{result}'. \n"
-                  + f"Let's try again, {name}!")
-    print(f'Congratulations, {name}!')
+    run_game(calc_game, QUESTION)
 
 
 if __name__ == '__main__':
