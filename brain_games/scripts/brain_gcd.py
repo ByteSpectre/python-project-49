@@ -26,7 +26,7 @@ def main():
             print(f"'{answer}' is wrong answer ;(."
                   + f" Correct answer was '{result}'. \n"
                   + f"Let's try again, {name}!")
-
+        print(f'Congratulations, {name}!')
 
 if __name__ == '__main__':
     main()
