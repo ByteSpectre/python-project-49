@@ -15,6 +15,19 @@ optional = false
 python-versions = ">=3.7.0"
 
 [[package]]
+name = "flake8"
+version = "7.0.0"
+description = "the modular source code checker: pep8 pyflakes and co"
+category = "dev"
+optional = false
+python-versions = ">=3.8.1"
+
+[package.dependencies]
+mccabe = ">=0.7.0,<0.8.0"
+pycodestyle = ">=2.11.0,<2.12.0"
+pyflakes = ">=3.2.0,<3.3.0"
+
+[[package]]
 name = "idna"
 version = "3.7"
 description = "Internationalized Domain Names in Applications (IDNA)"
@@ -23,12 +36,36 @@ optional = false
 python-versions = ">=3.5"
 
 [[package]]
+name = "mccabe"
+version = "0.7.0"
+description = "McCabe checker, plugin for flake8"
+category = "dev"
+optional = false
+python-versions = ">=3.6"
+
+[[package]]
 name = "prompt"
 version = "0.4.1"
 description = "Library for prompting input on the command line."
 category = "main"
 optional = false
 python-versions = ">=3.3"
+
+[[package]]
+name = "pycodestyle"
+version = "2.11.1"
+description = "Python style guide checker"
+category = "dev"
+optional = false
+python-versions = ">=3.8"
+
+[[package]]
+name = "pyflakes"
+version = "3.2.0"
+description = "passive checker of Python programs"
+category = "dev"
+optional = false
+python-versions = ">=3.8"
 
 [[package]]
 name = "requests"
@@ -75,13 +112,17 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "50c34a1634ca20f9fe50ba4ebc3f7a771d709ea00b5ded2615b913c554ca5248"
+content-hash = "764d5efdc72198abf7a3715ed02473727ce722a47eac74c7df604d5dbd8103e9"
 
 [metadata.files]
 certifi = []
 charset-normalizer = []
+flake8 = []
 idna = []
+mccabe = []
 prompt = []
+pycodestyle = []
+pyflakes = []
 requests = []
 requests-toolbelt = []
 urllib3 = []
