@@ -23,6 +23,14 @@ optional = false
 python-versions = ">=3.5"
 
 [[package]]
+name = "prompt"
+version = "0.4.1"
+description = "Library for prompting input on the command line."
+category = "main"
+optional = false
+python-versions = ">=3.3"
+
+[[package]]
 name = "requests"
 version = "2.32.2"
 description = "Python HTTP for Humans."
@@ -67,12 +75,13 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "e624a2eed0ac56dea43f87ae80b08caad6b8d480485fee57593cfc772b100537"
+content-hash = "50c34a1634ca20f9fe50ba4ebc3f7a771d709ea00b5ded2615b913c554ca5248"
 
 [metadata.files]
 certifi = []
 charset-normalizer = []
 idna = []
+prompt = []
 requests = []
 requests-toolbelt = []
 urllib3 = []
